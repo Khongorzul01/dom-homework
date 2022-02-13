@@ -12,12 +12,12 @@
     }
     dog();
     
-
-
     document.querySelector("#dog").addEventListener("click", () => {
         let image = document.createElement("img");
         image.setAttribute("id", "dogImage");
-        document.getElementById("dogImage").src ="/image/dog.jpg"
+        image.setAttribute("class", "zurag")
+        image.setAttribute("src","/image/dog.jpg")
+        document.querySelector("#body").appendChild(image)
     })
 
 
@@ -32,6 +32,14 @@ function horse() {
     document.getElementById("body").appendChild(inp);
 }
 horse();
+document.querySelector("#horse").addEventListener("click", () => {
+    let image = document.createElement("img");
+    image.setAttribute("id", "horseImage");
+    image.setAttribute("class", "zurag")
+    image.setAttribute("src","/image/horse.jpg")
+    document.querySelector("#body").appendChild(image)
+})
+
 
 function cat() {
     const inp = document.createElement("button");
@@ -45,6 +53,14 @@ function cat() {
 }
 cat();
 
+document.querySelector("#cat").addEventListener("click", () => {
+    let image = document.createElement("img");
+    image.setAttribute("id", "catImage");
+    image.setAttribute("class", "zurag")
+    image.setAttribute("src","/image/cat.jpg")
+    document.querySelector("#body").appendChild(image)
+})
+
 function cow() {
     const inp = document.createElement("button");
     inp.setAttribute("type", "button");
@@ -57,6 +73,14 @@ function cow() {
 }
 cow();
 
+document.querySelector("#cow").addEventListener("click", () => {
+    let image = document.createElement("img");
+    image.setAttribute("id", "cowImage");
+    image.setAttribute("class", "zurag")
+    image.setAttribute("src","/image/cow.jpg")
+    document.querySelector("#body").appendChild(image)
+})
+
 function small() {
     const inp = document.createElement("button");
     inp.setAttribute("type", "button");
@@ -68,6 +92,20 @@ function small() {
     document.getElementById("body").appendChild(inp);
 }
 small();
+
+document.querySelector("#small").addEventListener("click", () => {
+
+        document.querySelector("#dogImage").style.width ="400px";
+})
+document.querySelector("#small").addEventListener("click", () => {
+    document.querySelector("#catImage").style.width ="400px";
+})
+document.querySelector("#small").addEventListener("click", () => {
+    document.querySelector("#horseImage").style.width ="400px";
+})
+document.querySelector("#small").addEventListener("click", () => {
+    document.querySelector("#cowImage").style.width ="400px";
+})
 
 function big() {
     const inp = document.createElement("button");
@@ -82,12 +120,20 @@ function big() {
 big();
 
 
+document.querySelector("#big").addEventListener("click", () => {
 
-function zurag() {
-        let image = document.createElement("img");
-        image.setAttribute("id", "dogImage");
-    let jpg = document.getElementById("dogImage").src = "/image/dog.jpg"
-    image.appendChild(jpg);
-    document.getElementById("body").appendChild(image);
-} 
-zurag();
+    document.querySelector("#dogImage").style.width ="800px";
+})
+document.querySelector("#big").addEventListener("click", () => {
+document.querySelector("#catImage").style.width ="800px";
+})
+document.querySelector("#big").addEventListener("click", () => {
+document.querySelector("#horseImage").style.width ="800px";
+})
+document.querySelector("#big").addEventListener("click", () => {
+document.querySelector("#cowImage").style.width ="800px";
+})
+
+// Багшаа нэмэлтээр асуух зүйлс байна
+//Дээрх жижгэрүүлэх үйлдлийг тус бүрд нь функц үүсгэхгүйгээр нэг функ дортоо оруулах боломжтой юу?
+//Хэрэв боломжтой бол нөхцөл шалгах If ашиглахуу? Функцуудын доторхоор нөхцөл шалгадаг уу?
