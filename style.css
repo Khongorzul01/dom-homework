@@ -1,5 +1,5 @@
 #body {
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
   background-color: azure;
 }
@@ -21,3 +21,8 @@
   display: block;
   border-radius: 10px;
 }
+.zurag{
+  width:600px;
+  
+}
+
